@@ -1,0 +1,6 @@
+start_money = float(input('Enter start money: '))
+year_tax = float(input('Enter year tax: '))
+tax_frequency = int(input('Enter tax frequency: '))
+years =  int(input('Enter number of years: '))
+current_money = start_money * (1 + year_tax/tax_frequency)**(tax_frequency * years)
+print('Current money:', format(current_money, ',.2f'))
